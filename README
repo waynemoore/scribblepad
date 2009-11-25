@@ -1,0 +1,37 @@
+ScribblePad
+-----------
+A small experiment to that I intend to turn into a Google Wave gadget.
+
+
+Usage
+-----
+1. Create a canvas element in your document and give it a unique id attribute.
+	<canvas id="foo" width="400" height="300" />
+
+2. Include the scribblepad.js in the header.
+	<script type="text/javascript" src="scribblepad.js"></script>
+
+3. Attach a ScribblePad to the canvas element using it's id on window load.
+	new ScribblePad('foo');
+
+* See index.html for a demo.
+
+
+Options
+-------
+Currently there is only one option:
+
+	Option       Description
+	-----------  -------------------
+	lineWidth    pixels (integer)
+
+Options can be passed in using an object.
+	new ScribblePad('foo', {
+		'lineWidth': 4
+	});
+
+
+Known Issues
+------------
+It currently only works in Firefox, Chrome & Camino, i.e. It currently doesn't
+work in Safari and Opera.
